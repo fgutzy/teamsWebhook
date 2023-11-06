@@ -33,9 +33,9 @@ public class Chrome implements AutoCloseable {
         }
     }
 
-    public static String runWithChrome(Chrome chrome, String company, BiFunction<Chrome, String, String> method) {
+    public static String runWithChrome(String company, BiFunction<Chrome, String, String> method) {
         String returnValue = "";
-        try {
+        try (Chrome chrome = new Chrome()){
             returnValue =  method.apply(chrome, company);
         } catch (Exception e) {
             e.printStackTrace();
