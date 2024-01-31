@@ -1,0 +1,129 @@
+* [33m12fe976[m[33m ([m[1;36mHEAD -> [m[1;32maddTerappin[m[33m, [m[1;31morigin/addTerappin[m[33m)[m added Terappin
+* [33m65f425c[m[33m ([m[1;31morigin/addEvimdeki[m[33m, [m[1;32maddEvimdeki[m[33m)[m execute all scripts on page
+* [33mb9e3c3c[m added JS executer
+* [33m9a94ca7[m added JS executer
+* [33m2d43510[m changed waiting time
+* [33m5e6b24c[m added html file for debugging
+* [33m2e15b52[m changed finding by tag to xpath, since didnt work in deploy
+* [33m7a4bdee[m changed timeout duration
+* [33m73e95a1[m added evimdeki
+* [33m948d921[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m everything works
+* [33m1e5e499[m added Controller
+* [33mf02f043[m added testmapping
+* [33m756e7b8[m added api mapping and changed execution cron
+* [33m437e93c[m added logging to mantracare
+* [33m6759574[m Update WebsiteRetrieval.java
+* [33m3f214b0[m Update Handler.java
+* [33me6b6c65[m Update Constants.java
+* [33m3ba6a92[m changed try catch structure, to close chrome instance asap
+* [33ma06b58c[m changed cron date
+* [33m72677cf[m added MantraCare company
+*   [33mb7a1ec9[m Merge pull request #3 from fgutzy/connectToDB
+[32m|[m[33m\[m  
+[32m|[m * [33m0261bb9[m[33m ([m[1;32mconnectToDB[m[33m)[m corrected incomingWebhookURI
+[32m|[m * [33mc8ef07d[m corrected occorences where company returns sql query instead of certain get value. Changed execution time to 8AM daily. Changed webhookURI to the right channel
+[32m|[m * [33mb36b511[m corrected accorences where company returns sql query instead of certain get value
+[32m|[m * [33m0127f11[m changed execution time
+[32m|[m *   [33ma22c2cc[m Merge remote-tracking branch 'origin/connectToDB' into connectToDB
+[32m|[m [34m|[m[35m\[m  
+[32m|[m [34m|[m * [33m22e9c34[m Update Handler.java
+[32m|[m * [35m|[m [33m86ff724[m solved repository = null problem and added new DB connection
+[32m|[m [35m|[m[35m/[m  
+[32m|[m * [33md04bf16[m added @Component to Chrome.java
+[32m|[m * [33m025445c[m removes static context from repository in Chrome.java
+[32m|[m * [33m8c597c8[m commented out tests
+[32m|[m * [33m3206c14[m db connection works locally
+[32m|[m * [33m8dadd50[m Update Handler.java
+[32m|[m * [33mb15e955[m Update application.properties
+[32m|[m * [33mcfb53bd[m db connection works locally
+[32m|[m[32m/[m  
+* [33m6b7cc70[m Update Constants.java
+* [33m64375f3[m Update Handler.java
+[35m|[m * [33m2ff4498[m[33m ([m[1;31morigin/persistData[m[33m)[m Update Handler.java
+[35m|[m * [33mc1baefd[m Update Handler.java
+[35m|[m * [33m77b6c29[m[33m ([m[1;32mpersistData[m[33m)[m test Change in properties file
+[35m|[m * [33m933b8b6[m corrected writing currentValues
+[35m|[m * [33m52db129[m corrected writing currentValues
+[35m|[m * [33m65612d3[m corrected writing currentValues
+[35m|[m * [33m5be2579[m corrected writing currentValues
+[35m|[m * [33m0834142[m changed webhook uri
+[35m|[m * [33maab5f22[m changed webhook uri
+[35m|[m * [33md93eb02[m storing and retrieving values works
+[35m|[m[35m/[m  
+* [33m70a3b7f[m added @Component
+* [33m9cf8c22[m added @Component
+* [33m54e0fde[m added @Component
+* [33md4e98de[m Update Handler.java
+* [33m4d084b6[m Update Handler.java
+* [33ma94ee47[m Update Handler.java
+* [33mea11b82[m final commit
+*   [33m8c6bcdf[m Merge pull request #2 from fgutzy/deployment
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m0159575[m[33m ([m[1;31morigin/deployment[m[33m)[m final commit
+[1;31m|[m *   [33ma81e630[m Merge pull request #1 from fgutzy/main
+[1;31m|[m [1;33m|[m[1;31m\[m  
+[1;31m|[m [1;33m|[m[1;31m/[m  
+[1;31m|[m[1;31m/[m[1;33m|[m   
+* [1;33m|[m [33m363dc79[m first commit
+[1;33m|[m[1;33m/[m  
+* [33ma46f478[m added psikoloji merkezi and changed cron
+* [33mc0bb205[m correct cron syntax
+* [33m2debb90[m added scheduled task
+* [33mffca9ca[m added scheduled task
+* [33mb743645[m added jar file
+* [33m6299ad4[m created jar file and added Procfile
+* [33m07742a9[m changed xpaths for hiwell
+* [33mff80b7e[m changed xpath of price element
+* [33mc53189f[m added wait for email field
+* [33mcfe3383[m assigned webdriverwait element to variable
+* [33mbac1e41[m increased waiting time for hiwell element
+* [33m5a1b5a0[m commented delteScopedFiels out
+* [33m9dbe1fa[m added incomingwebhook uri
+* [33m6945819[m only try hiwell
+* [33m89e05d5[m added no sandboy argument
+* [33m6fd6787[m adjusted chromedriver and chrome environment properties
+* [33md534a20[m changed binary location of chromedriver
+* [33med8fbfc[m added binary path for chromedriver
+* [33mbd5a195[m added binary path for chromedriver
+* [33m8d3d157[m removed chrome driver path, because heroku adds it itself
+* [33mc8b405f[m changed directory of resources
+* [33m69ffd4c[m changed directory of resources
+* [33mbc93a93[m changed directory of resources
+* [33mc1c6b28[m configured pom file
+* [33m17cd5da[m added <maven.compiler.source>3.11.0</maven.compiler.source> into pom
+* [33m808abaf[m added <maven.compiler.source>1.8</maven.compiler.source> into pom
+* [33me6d06fb[m added constants class
+* [33m5398c80[m added environment variables for sensitive data
+*   [33md10d301[m Merge pull request #5 from fgutzy/addOtherCompanies
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m86ecdb4[m Added Evidemki, but commented out, due to their website speed performance
+[1;35m|[m * [33m0f08608[m removed unnecessary driver initialisation in each method.  added companies name to logging
+[1;35m|[m * [33m8905487[m evimdekipsikolog works (but theyre website is really slow, so it drags down the service time)
+[1;35m|[m * [33m6a65792[m added evidem psikoloji. Retrieval is mostly working, but not fully implemented
+[1;35m|[m * [33ma1133b9[m created method that calls retrievingMethods, to save try catch finally blocks
+[1;35m|[m * [33mabd6cfc[m added logs for initializing driver
+[1;35m|[m * [33made7e52[m standardized logging and corrected put values
+[1;35m|[m * [33m00d63b5[m removed executeWithChrome method and instead create the chrome instance directly in each method
+[1;35m|[m * [33m9eb1af8[m Changed look of json file
+[1;35m|[m * [33m150b38d[m Solved PsikolojiMerkezi Problem
+[1;35m|[m[1;35m/[m  
+*   [33md53be61[m Merge pull request #4 from fgutzy/PriceAlert
+[31m|[m[32m\[m  
+[31m|[m * [33mdc56794[m Looping through all prices to check for changes and notify accordingly
+[31m|[m * [33m27daa4c[m price change notification works but is error prone in cases when prices arent saved/found
+[31m|[m * [33me5d4492[m transformed uncalled variable that waits for all tasks
+[31m|[m * [33mb8bc1ad[m generalized calling the price retrieving methods
+* [32m|[m   [33mcb1ee62[m Merge pull request #3 from fgutzy/NoraPsikoloji
+[33m|[m[34m\[m [32m\[m  
+[33m|[m * [32m|[m [33mf9acb80[m Merge pull request #2 from fgutzy/AddDurationOfSession
+[33m|[m [35m|[m[32m\[m[32m|[m 
+[33m|[m [35m|[m * [33mbec16e6[m MultiThreading works
+[33m|[m [35m|[m * [33m980603d[m MultiThreading works. Improved UX in  reponse to webhook
+[33m|[m [35m|[m[35m/[m  
+* [35m|[m [33m613494f[m Merge pull request #1 from fgutzy/HiWell
+[1;31m|[m[35m\[m[35m|[m 
+[1;31m|[m * [33m19ad88b[m added logs
+[1;31m|[m * [33m4c51c9f[m Price is returned as String Adjusted MessageCard
+[1;31m|[m * [33mac7d8be[m HiWell works (including wait for Element)
+[1;31m|[m[1;31m/[m  
+* [33m8b1609e[m HiWell works
